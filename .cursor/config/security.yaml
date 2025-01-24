@@ -1,0 +1,9 @@
+# .cursor/config/security.yaml
+validation:
+  schedule: weekly
+  rulesets:
+    - https://github.com/supabase-community/security-rules
+autoGen:
+  requireReview: true
+  reviewers:
+    - security-team@example.com

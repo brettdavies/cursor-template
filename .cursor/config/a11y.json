@@ -1,0 +1,8 @@
+{
+  "standards": "WCAG2AA",
+  "autoFix": {
+    "enabled": ["color-contrast", "aria-required-attr", "image-alt"],
+    "disabled": ["focus-order", "aria-roles", "semantic-html"]
+  },
+  "failureSeverity": "warning"
+}

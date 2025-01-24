@@ -1,0 +1,13 @@
+# .cursor/config/database.yaml
+queryRules:
+  indexCoverage: 95%
+  explainAnalysis:
+    require: true
+    maxCost: 0.95
+  batchOperations:
+    minRows: 1000
+    patterns: [bulkInsert, massUpdate]
+
+autoIndexing:
+  enabled: true
+  reviewRequired: true

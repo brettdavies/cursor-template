@@ -1,0 +1,19 @@
+sources:
+  global: 
+    path: "@/types/*.types.ts"
+    forbiddenPatterns:
+      - "*Service"
+      - "*Store"
+  
+  feature:
+    path: "@/features/*/types/*.types.ts"
+    requiredImports:
+      - "Database"
+  
+  supabase:
+    path: "@/types/database.types.ts"
+    syncCommand: "npm run supabase:types"
+
+validation:
+  duplicateSeverity: error
+  missingSeverity: warn

@@ -1,0 +1,16 @@
+boundaryRules:
+  - name: no-cross-imports
+    pattern: "import.*from '@/features/(?!$1)"
+    severity: error
+  
+  - name: public-api-exports
+    requiredFiles:
+      - index.ts
+    exportPatterns:
+      - "export { default as * } from './components/*'"
+      - "export type { * } from './types/*'"
+
+storeRequirements:
+  - pattern: "createStore"
+  - requiredImports:
+      - "@/lib/stores"

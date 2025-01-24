@@ -1,0 +1,12 @@
+unit:
+  path: __tests__/unit/**
+  pattern: "*.test.tsx"
+  threshold: 10
+  hooks:
+    - pre-commit
+
+e2e:
+  path: __tests__/e2e/**
+  pattern: "*.spec.ts"
+  schedule: "0 0 * * *"
+  ci: true
