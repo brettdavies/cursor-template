@@ -1,0 +1,6 @@
+# Project specific
+.idea
+
+# MacOS
+**/.DS_Store
+
